@@ -1,24 +1,28 @@
 body {
     font-family: Arial, sans-serif;
+    background: radial-gradient(circle farthest-side at 0% 50%, #d1ecf4 23.5%, #0000 0)33.6px 48px,
+        radial-gradient(circle farthest-side at 0% 50%, #d1ead9 24%, #0000 0)30.4px 48px,
+        linear-gradient(#d1ecf4 14%, #0000 0, #0000 85%, #d1ecf4 0)0 0,
+        linear-gradient(150deg, #d1ecf4 24%, #d1ead9 0, #d1ead9 26%, #0000 0, #0000 74%, #d1ead9 0, #d1ead9 76%, #d1ecf4 0)0 0,
+        linear-gradient(30deg, #d1ecf4 24%, #d1ead9 0, #d1ead9 26%, #0000 0, #0000 74%, #d1ead9 0, #d1ead9 76%, #d1ecf4 0)0 0,
+        linear-gradient(90deg, #d1ead9 2%, #d1ecf4 0, #d1ecf4 98%, #d1ead9 0%)0 0 #d1ecf4;
+    background-size: 64px 96px;
+    background-color: #d1ecf4;
+    color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
 }
 
 .container {
-    background-color: white;
+    max-width: 400px;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 5px;
+    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     text-align: center;
-    color: #333;
 }
 
 form {
@@ -31,24 +35,21 @@ label {
 }
 
 input {
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #4CAF50;
+    background-color: #45a049;
 }
 
 p {
@@ -65,7 +66,14 @@ p a:hover {
 }
 
 header {
-    background-color: #007bff;
+    background:
+      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#32b4b4 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#32b4b4 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+      radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#32b4b4 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+      radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#32b4b4 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+      repeating-conic-gradient(#4caf50 0 25%,#0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
+      radial-gradient(#0000 66%,#32b4b4 68% 70%,#0000 72%) 0 calc(32px/2)/32px 32px
+      #4caf50;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -73,7 +81,7 @@ header {
 
 nav ul {
     list-style: none;
-    padding: 0px;
+    padding: 0;
     display: flex;
     justify-content: center;
     background-color: #333;
@@ -88,12 +96,12 @@ nav ul li a {
     text-decoration: none;
 }
 
-
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-main { 
+
+main {
     padding: 20px;
 }
 
@@ -101,6 +109,57 @@ main {
     display: none;
 }
 
-.active {
+.contenido.active {
     display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.btn-editar {
+    background-color: #FFD700;
+    /* Color dorado para el botón de editar*/
+}
+
+.btn-editar:hover {
+    background-color: #FFC107;
+    /* Color más claro para el hover */
+}
+
+.btn-eliminar {
+    background-color: #FF6347;
+    /* Color rojo tomate para el botón de eliminar */
+}
+
+.btn-eliminar:hover {
+    background-color: #FF4500;
+    /* Color más oscuro para el hover */
 }
